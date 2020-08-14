@@ -1,0 +1,428 @@
+ * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-width: 800px;
+        font-family: " Microsoft YaHei UI";
+    }
+
+    /*顶部样式*/
+    .header {
+        background-color: #07cac9;
+        height: 80px;
+        width: 100%;
+        top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .header img {
+        margin-left: 60px;
+        margin-top: 16px;
+    }
+
+    .header ul {
+        float: right;
+        list-style: none;
+        margin-right: 55px;
+        line-height: 80px;
+    }
+
+    .header ul li {
+        float: left;
+        padding:0 20px;
+    }
+    .header ul li:hover {
+        background-color:#ccc; 
+    }
+
+    .header ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    /*banner图区*/
+    .banner {
+        width: 100%;
+        margin-top: 80px;
+
+    }
+
+    .banner img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .banner .cover_page {
+        /*background-color: black;*/
+        width: 100%;
+        background: rgba(0,0,0,0.2);
+        height: 600px;
+        position: absolute;
+        top:80px;
+        z-index: 2;
+
+    }
+
+    .cover_page .login {
+        position: relative;
+        width: 509px;
+        /*height: 300px;*/
+        /*right: 0;*/
+        margin: 0 auto;
+        padding-top: 100px;
+        color: white;
+        /*left:50%;*/
+        text-align: center;
+    }
+
+    .cover_page .login input {
+        background-color: black;
+        opacity: 0.5;
+        width: 505px;
+        height: 39px;
+        margin-bottom: 30px;
+        color: white;
+        border: 2px solid white;
+        outline: none;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .cover_page .login input:hover{
+        border-color: #07cbc9;
+    }
+
+    .cover_page .login input.submit {
+        width: 127px;
+        /*margin-left: 191px;*/
+        /*line-height: 39px;*/
+    }
+    .cover_page .login input.submit:hover{
+        border:none;
+        background-color: #07cbc9;
+    }
+    .cover_page .login textarea:hover{
+        border-color: #07cbc9;
+    }
+
+    .cover_page .login textarea {
+        margin-bottom: 10px;
+        background-color: black;
+        border: 2px solid white;
+        outline: none;
+        opacity: 0.5;
+        width: 505px;
+        height: 115px;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /*ABOUT区*/
+    .about {
+        width: 100%;
+        /*height: 1000px;*/
+        text-align: center;
+
+    }
+
+    /*上面部分*/
+    .about .top {
+        padding-top: 70px;
+
+    }
+     .about .title{
+     	width: 480px;
+     	/*padding-left: 220px;*/
+     	margin: 0 auto;
+     }
+    .blue_line {
+        text-align: center;
+        padding: 27px 0px 24px 0px;
+    }
+
+    .blue_line p {
+        height: 2px;
+        background-color: #07cbc9;
+        width: 43px;
+        margin: 0 auto;
+    }
+
+    .about .text {
+        width: 480px;
+        height: 64px;
+        margin: 0 auto;
+        color: #797979;
+        padding-bottom: 30px;
+    }
+
+    /*文字下边部分*/
+    .about .text_bottom {
+        width: 1130px;
+        margin: 0 auto;
+        padding-top: 36px;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+    .text_bottom>div {
+        float: left;
+    }
+
+    .text_bottom .picture_left {
+        width: 250px;
+    }
+
+    .text_bottom .picture_left p {
+        height: 70px;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .picture_left div {
+        position: relative;
+        top: 60px;
+        width: 370px;
+        height: 200px;
+
+        padding: 20px 26px 24px;
+        background: rgba(255,255,255,0.5);
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        border: 1px solid #c5c5c5;
+        text-align: left;
+    }
+
+    .picture_left dd {
+        line-height: 45px;
+        height: 45px;
+        width: 102px;
+        color: white;
+        text-align: center;
+        background-color: black;
+        margin: 24px 0 0 26px;
+        cursor: pointer;
+    }
+     .picture_left dd:hover{
+        background: rgba(0,0,0,0.2);
+        border:1px solid black;
+     }
+
+    /*中间图片部分*/
+    .picture_center {
+        height: 380px;
+        width: 580px;
+    }
+
+    .picture_center img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /*图片右边部分*/
+    .text_bottom .picture_right {
+        /*width: 200px;*/
+        float: right;
+    }
+
+    .picture_right div.right_text {
+        height: 144px;
+        margin: 0 0 31px 36px;
+        width: 238px;
+        border: 1px solid #07cbc9;
+        text-align: center;
+    }
+
+    div.right_text dl,
+    div.right_text dd,
+    div.right_text dt {
+        margin-top: 20px;
+    }
+
+    div.right_text dl {
+        font-size: 27px;
+        font-weight: bolder;
+    }
+
+    div.right_text dt {
+        height: 2px;
+        width: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        background-color: #07cbc9;
+    }
+
+    div.right_text dd {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /*底部图文样式*/
+    .pinture_text {
+        width: 100%;
+        padding-top: 100px;
+        overflow: hidden;
+        zoom:1;
+        position: relative;
+
+    }
+    .clear{
+    	clear: both;
+    }
+
+    .pinture_text p,
+    .pinture_text div {
+        width: 25%;
+        float: left;
+        height: 400px;
+        min-height: 280px;
+
+    }
+
+    .pinture_text div {
+        background-color: #07cbc9;
+    }
+    /*右箭头*/
+    .word,.left2,.right1,.right2{
+        position: relative;
+    }
+    .pinture_text span.arrow_right{
+        position: absolute;
+        right:-50px ;
+        top: 50%;
+        margin-top: -20px;
+        width: 0;
+        display: block;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 20px 20px 30px;
+        border-color: transparent transparent transparent #07cbc9;
+    }
+    .pinture_text span.arrow2_right{
+        right: -50px;
+        top: 50%;
+        margin-top: -20px;
+    }
+    /*左箭头*/
+    .pinture_text span.arrow_left{
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        margin-top: -20px;
+        width: 0;
+        display: block;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 30px 20px 20px;
+        border-color: transparent #07cbc9 transparent transparent ;
+    }
+
+    .pinture_text span.arrow2_left{
+        right: -50px;
+        top: 50%;
+        margin-top: -20px;
+    }
+    .pinture_text div dl {
+        text-align: left;
+        color: #fff;
+        padding: 10% 10%;
+    }
+
+    .pinture_text div dl h1 {
+        font-size: 30px;
+    }
+    .pinture_text div dl dt{
+        padding-top: 25px;
+    }
+
+    .pinture_text div dl dd:not(:last-child) {
+        font-size: 13px;
+        padding-top: 25px;
+        color: #dddbdb;
+        word-spacing: 2px;
+    }
+    .pinture_text div dl dd:last-child{
+        background-color: black;
+        width: 105px;
+        height: 43px;
+        margin:0 auto;
+        text-align: center;
+        margin-top:48px;
+        line-height: 43px;
+        cursor: pointer;
+    }
+    .pinture_text div dl dd:last-child:hover{
+        background: rgba(0,0,0,0.2);
+        border:1px solid black;
+    }
+
+    .pinture_text p img {
+        width: 100%;
+        height: 100%;
+    }
+   /*  GALLERY区 */
+    .gallery{
+    	width: 100%;
+    }
+    .gallery .gallery_text{
+    	height: 250px;
+    	width: 493px;
+    	margin:0 auto;
+    }
+    .gallery_text dl{
+    	text-align: center;
+    	padding-top: 67px;
+    	
+    }
+    .gallery_text dl dd.line{
+    	width: 40px;
+    	height: 2px;
+    	background-color: #07cbc9;
+    	margin:0 auto;
+    	margin-top: 28px;
+    }
+    .gallery_text dl dd{
+    	color: #797979;
+    	line-height: 26px;
+    }
+    /*图片部分*/
+    .more_picture{
+    	width: 1170px;
+    	margin:0 auto;
+    	overflow: hidden;
+    	zoom:1;
+    }
+     .more_picture div{
+     	float: left;
+     	margin:15px;
+     }
+     .more_picture div img{
+     	height: 240px;
+     	width: 360px;
+     }
+      .more_picture div p{
+      	color: white;
+      	height: 64px;
+      	margin-top: -4px;
+      	line-height: 64px;
+      	text-indent: 2em;
+      	background-color: #000000;
+      }
+      /*页脚部分*/
+      .footer{
+      	background-color: #07cbc9;
+      	height: 80px;
+      	width: 100%;
+      	text-align: center;
+      	margin-top: 50px;
+      }
+      .footer p{
+      	line-height: 80px;
+      	color: #fff;
+      }
