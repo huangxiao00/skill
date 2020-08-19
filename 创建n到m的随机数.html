@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+       div{
+        position: absolute,relative,static,fixed,sticky;
+        overflow: scroll;
+       }
+       div:nth-child(4){
+
+       }
+       div,p{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        margin-bottom: 20px;
+       }
+       div + p{
+        border-image-source: url();
+        border-image-slice: fill;
+        border-image-width: 5px;
+        border-image-outset: 5px;
+        border-image-repeat: no-repeat;
+       }
+       p[class="o"];
+       p:not(:last-of-type);
+       p::after,p::before;p::first-letter,p::first-line
+       p::selection{
+        color: red;background-color: green;
+        border-radius: 5px;
+        box-shadow: 5px 6px 2px 6px black inset,outset;
+       }
+       p{
+
+       }
+    </style>
+</head>
+
+<body>
+    <div>
+        2
+    </div>
+    <P>
+        3
+    </P>
+      <P class="o">
+        4
+    </P>
+    <script type="text/javascript">
+      function ran(a,b){
+         var value=Math.floor(Math.random()*(b-a+1)+a);
+         return value;
+      }
+      console.log(ran(66,6))
+    </script>
+</body>
+
+</html>
