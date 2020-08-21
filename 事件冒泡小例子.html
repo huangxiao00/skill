@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>try-catch-finally</title>
+    <style type="text/css">
+      td{
+        height: 30px;
+        width: 130px;
+        border:1px solid black;
+        text-align: center;
+        opacity: 1;
+        
+        color: rgba(2,2,2,1)transparent;
+      }
+      .color{
+        height: 0;
+        width: 0;
+        border-width:30px;
+        border-style: solid;
+        border-color: transparent transparent transparent red;
+      }
+
+    </style>
+</head>
+
+<body>
+    <table id="table">
+    </table>
+    <div id="div1">
+      22
+       <ul>
+         <li>666</li>
+         <li>45</li>
+         <li>345</li>
+       </ul>
+    </div>
+    <div id="div2"  onclick="(function(){alert(5)})()">
+      6666
+    </div>
+    <input type="email,url,tel,number" name="">
+    <input type="datetime-local" name="">
+    <input autocomplete="" autofocus="autofocus" multiple="" required="" type="range,meter,progress,search,color" name="">
+    <select id="sele">
+
+      <option>555date</option>
+      <option>56</option>
+      <option>45</option>
+      <option>545895</option>
+    </select>
+    <input type="checkbox" name="s">
+    <input type="checkbox" name="s">
+    <button id="btn">6sfdsd</button>
+    <ol id="ol">
+       <li id="li1">234</li>
+       <li id="li2">43242</li>
+       <li id="li3">fsdf</li>
+       <li id="li4">fsdf</li>
+       <li id="li5">fsf</li>
+    </ol>
+    <script>
+        var ol=document.querySelector('#ol');
+        var li1=document.querySelector('#li1');
+        li1.setAttribute('data', '6')
+        ol.addEventListener('click',function(event){
+             var idName=event.target.id;
+              switch(idName){
+                case 'li1': alert(1);
+                break;
+                case 'li1': alert(2);
+                break;
+                case 'li1': alert(3);
+                break;
+                case 'li1': alert(4);
+                break;
+                default: alert(5);
+              }
+        },false);
+       /*var btn=document.querySelector('#btn');
+        function addEvent(){
+          alert(3);
+        }
+        function handEvent(element,type,fn){
+             if(element.addEventListener){
+                element.addEventListener(type, fn)
+             }else if(element.attachEvent){
+                 element.attachEvent('on'+type,fn)
+             }else{
+                element['on'+type]=null;
+             }
+        }
+         function rehandEvent(element,type,fn){
+             if(element.removeEventListener){
+                element.removeEventListener(type, fn)
+             }else{
+                element['on'+type]=null;
+             }
+        }
+        handEvent(btn,'click',addEvent)
+        rehandEvent(btn,'click',addEvent)*/
+    </script>
+</body>
+
+</html>
