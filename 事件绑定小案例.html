@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>try-catch-finally</title>
+    <style type="text/css">
+    body{
+      padding:0;
+      margin:0;
+    }
+    .div1{
+      height: 500px;
+      width: 100%
+    }
+    li{
+      float: left;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      background: #333;
+      text-align: center;
+      line-height: 30px;
+      color:#fff;
+    }
+    ul li:nth-child(1){
+      background:red;
+    }
+    ul li:nth-child(2){
+      background:black;
+    }
+    ul li:nth-child(3){
+      background:blue;
+    }
+    ul li:nth-child(4){
+      background:yellow;
+    }
+    ul li:nth-child(5){
+      background:green;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+    </div>
+    <ul id="oUl">
+        <li>红色</li>
+        <li>黑色</li>
+        <li>蓝色</li>
+        <li>黄色</li>
+        <li>绿色</li>
+    </ul>
+    <script>
+       var oul=document.querySelector('#oUl');
+       var oDiv=document.querySelectorAll('.div1')[0];
+       oul.addEventListener('click',function(event){
+             console.log(event.target)
+              var target=event.target;
+              var value=target.innerHTML;
+              var divColor=oDiv.style.backgroundColor;
+              console.log(value)
+              switch(value){
+                case "红色" : oDiv.style.backgroundColor="red";
+                break;
+                case "黑色" : oDiv.style.backgroundColor="black";
+                break;
+                case "蓝色" : oDiv.style.backgroundColor="blue";
+                break;
+                case "黄色" : oDiv.style.backgroundColor="yellow";
+                break;
+                case "绿色" : oDiv.style.backgroundColor="green";
+                break;
+              }
+          }
+        , false)
+    </script>
+</body>
+
+</html>
